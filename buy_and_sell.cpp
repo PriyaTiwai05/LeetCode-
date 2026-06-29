@@ -2,8 +2,9 @@
 #include <vector>
 using namespace std;
 int maxProfit(vector<int> &price){
-int maxProfit = 0,bestBuy=price[0];
-for(int i=1;i<price.size();i++){
+int maxProfit = 0;
+int bestBuy=price[0];
+for(int i = {
     if(price[i]>bestBuy){
         maxProfit = max(maxProfit,price[i]-bestBuy);
     }
